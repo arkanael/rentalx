@@ -25,6 +25,28 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
+### 🌉 Rotas utiizadas:
+
+- Create `http://localhost:3333/categories`  TIPO: POST
+- FindAll `http://localhost:3333/categories` TIPO: GET
+
+### 📚 Legendas dos verbos HTTP
+
+- GET => Buscar uma informação
+- POST => Inserir uma informação
+- PUT => Alterar uma informação
+- PATCH => Alterar uma informação específica
+- DELETE => Deleta uma informação
+
+### 🚀 Meus Contatos
+
+<h4>LinkedIn: <a href="https://www.linkedin.com/in/lbandeira/">www.linkedin.com/in/lbandeira/</a></h4>
+<h4>Facebook: <a href="https://www.facebook.com/luiz.guilherme.58367/">https://www.facebook.com/luiz.guilherme.58367/</a></h4>
+<h4>E-mail: <a href="mailto://arkanael@gmailcom/">arkanael@gmail.com</a></h4>
+<h4>Currículo: <a href="https://arkanael.github.io/curriculo/">https://arkanael.github.io/curriculo/</a></h4>
+<h4 align=center>Desenvolvido por Luiz Guilherme Bandeira</h4>
+
+
 express
 typescript
 uuid
@@ -43,7 +65,3 @@ yarn eslint --init
 yarn add uuid
 yarn add @types/uuid -D
 
-src
-model
-routes
-repositories

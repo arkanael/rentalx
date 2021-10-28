@@ -25,10 +25,11 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-### 🌉 Rotas utiizadas:
+### 🌉 Rotas utiizadas :
+#### Base: `http://localhost:3333`
 
-- Create `http://localhost:3333/categories`  TIPO: POST
-- FindAll `http://localhost:3333/categories` TIPO: GET
+- Create `/categories` TIPO: POST
+- FindAll `/categories` TIPO: GET
 
 ### 📚 Legendas dos verbos HTTP
 
@@ -45,7 +46,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <h4>E-mail: <a href="mailto://arkanael@gmailcom/">arkanael@gmail.com</a></h4>
 <h4>Currículo: <a href="https://arkanael.github.io/curriculo/">https://arkanael.github.io/curriculo/</a></h4>
 <h4 align=center>Desenvolvido por Luiz Guilherme Bandeira</h4>
-
 
 express
 typescript
@@ -64,4 +64,3 @@ yarn eslint --init
 
 yarn add uuid
 yarn add @types/uuid -D
-

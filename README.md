@@ -33,10 +33,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 📚 Legendas dos verbos HTTP
 
-- GET => Buscar uma informação
-- POST => Inserir uma informação
-- PUT => Alterar uma informação
-- PATCH => Alterar uma informação específica
+- GET    => Buscar uma informação
+- POST   => Inserir uma informação
+- PUT    => Alterar uma informação
+- PATCH  => Alterar uma informação específica
 - DELETE => Deleta uma informação
 
 ### 🚀 Meus Contatos

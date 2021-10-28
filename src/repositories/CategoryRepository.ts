@@ -5,14 +5,14 @@ interface ICreateCategoryDTO {
       description: string;
 }
 
-class CaregoriyRepository {
+class CategoryRepository {
       constructor() {
             this.categories = [];
       }
 
       private categories: Category[];
 
-      create({description, name} : ICreateCategoryDTO):void {
+      create({ description, name }: ICreateCategoryDTO): void {
             const category = new Category();
 
             Object.assign(category, {
@@ -24,16 +24,16 @@ class CaregoriyRepository {
             this.categories.push(category);
       }
 
-      findAll():Category[]{
-
-
+      findAll(): Category[] {
             return this.categories;
       }
 
-      findByName(name: string):Category{
-            const category = this.categories.find((category) => category.name === name);
+      findByName(name: string): Category {
+            const category = this.categories.find(
+                  (category) => category.name === name
+            );
             return category;
       }
 }
 
-export { CaregoriyRepository };
+export { CategoryRepository };

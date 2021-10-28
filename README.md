@@ -19,3 +19,9 @@ yarn eslint --init
 
 yarn add uuid
 yarn add @types/uuid -D
+
+
+src
+model
+routes
+repositories

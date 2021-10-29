@@ -2,6 +2,7 @@
 
 🚗 RentalX -
 
+Sistema de aluguel de carro
 Projeto desenvolvido no curso **Ignite** da Rocketseat
 
 ---
@@ -22,6 +23,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - **[Express](https://expressjs.com/)**
 - **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+- **[Multer](https://github.com/expressjs/multer/blob/master/doc/README-pt-br.md)
 
 ---
 
@@ -42,10 +44,15 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Arquiteturas da aplicação
 
-src
-modules
-routes
-server.ts
+src -> onde fica todo o projeto
+modules -> para fazer a agregação das funionalidades da aplicação.
+cars -> Onde agrega tudo sobre os carros
+Contracs -> Onde estão as nossas interfaces de contratos.
+models -> referente as entidades da aplicação.
+repositories -> Responsavel pelo repositorio da sua agregação
+useCases -> Onde fica as regras de negocios da aplicação.
+routes ->  Responsavél por manipular nossas as rotas da aplicação.
+server.ts -> Responsavél por iniciar a aplicação.
 
 ### 🚀 Meus Contatos
 

@@ -1,4 +1,4 @@
-import { ICategoryRepository } from "../repositories/ICategoryRepository";
+import { ICategoryRepository } from "../contratcs/repositories/ICategoryRepository";
 
 interface IRequest{
       name:string, 

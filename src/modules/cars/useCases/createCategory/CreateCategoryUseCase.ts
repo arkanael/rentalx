@@ -1,10 +1,10 @@
-import { ICategoryRepository } from "../contratcs/repositories/ICategoryRepository";
+import { ICategoryRepository } from "../../contratcs/repositories/ICategoryRepository";
 
 interface IRequest{
       name:string, 
       description:string,
 }
-class CreateCategoryService{
+class CreateCategoryUseCase{
       constructor(private categoryRepository: ICategoryRepository){}
 
       execute({ name, description }: IRequest): void{
@@ -20,4 +20,4 @@ class CreateCategoryService{
 
 }
 
-export { CreateCategoryService }
+export { CreateCategoryUseCase }

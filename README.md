@@ -26,6 +26,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 ### 🌉 Rotas utiizadas :
+
 #### Base: `http://localhost:3333`
 
 - Create `/categories` TIPO: POST
@@ -33,10 +34,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### 📚 Legendas dos verbos HTTP
 
-- GET    => Buscar uma informação
-- POST   => Inserir uma informação
-- PUT    => Alterar uma informação
-- PATCH  => Alterar uma informação específica
+- GET => Buscar uma informação
+- POST => Inserir uma informação
+- PUT => Alterar uma informação
+- PATCH => Alterar uma informação específica
 - DELETE => Deleta uma informação
 
 ### 🚀 Meus Contatos
@@ -64,3 +65,7 @@ yarn eslint --init
 
 yarn add uuid
 yarn add @types/uuid -D
+
+Routes => Recebe a requisição e repassa
+Controllers => Classes que recebem a requisição e retoram a resposta para quem está chamando
+useCase => operações do sistema, regras de negocios.

@@ -40,6 +40,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - PATCH => Alterar uma informação específica
 - DELETE => Deleta uma informação
 
+### Arquiteturas da aplicação
+
+src
+modules
+routes
+server.ts
+
 ### 🚀 Meus Contatos
 
 <h4>LinkedIn: <a href="https://www.linkedin.com/in/lbandeira/">www.linkedin.com/in/lbandeira/</a></h4>

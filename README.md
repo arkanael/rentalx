@@ -69,3 +69,5 @@ yarn add @types/uuid -D
 Routes => Recebe a requisição e repassa
 Controllers => Classes que recebem a requisição e retoram a resposta para quem está chamando
 useCase => operações do sistema, regras de negocios.
+
+Padrão Sinfgleton para instanciar as classes de repositorio

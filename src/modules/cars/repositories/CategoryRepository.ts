@@ -1,12 +1,25 @@
 import { Category } from "../models/Category";
-import { ICategoryRepository, ICreateCategoryDTO } from "../contratcs/repositories/ICategoryRepository";
+import {
+      ICategoryRepository,
+      ICreateCategoryDTO,
+} from "../contratcs/repositories/ICategoryRepository";
 
 class CategoryRepository implements ICategoryRepository {
-      constructor() {
+      private constructor() {
             this.categories = [];
       }
 
       private categories: Category[];
+
+      private static INSTANCE: CategoryRepository;
+
+      public static getInstance(): CategoryRepository {
+            if (!CategoryRepository.INSTANCE) {
+                  CategoryRepository.INSTANCE = new CategoryRepository();
+            }
+
+            return CategoryRepository.INSTANCE;
+      }
 
       create({ description, name }: ICreateCategoryDTO): void {
             const category = new Category();

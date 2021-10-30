@@ -7,4 +7,4 @@ const router = Router();
 router.use("/categories", categoriesRoutes);
 router.use("/specifications", specificationRoutes);
 
-export{router}
+export { router };

@@ -17,8 +17,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - CORS (https://expressjs.com/en/resources/middleware/cors.html)
 - Uuid (https://www.npmjs.com/package/uuidv4)
 - Multer (https://github.com/expressjs/multer/blob/master/doc/README-pt-br.md)
-- Stream ()
+- Stream (https://nodejs.org/api/stream.html)
 - csvparte (https://www.npmjs.com/package/csv-parse)
+- Swagger (https://www.npmjs.com/package/swagger-ui-express)
 ---
 
 ## ⚙️ Funcionalidades
@@ -89,6 +90,11 @@ yarn add @types/uuid -D
 yarn add Multer
 yarn add @types/multer -D
 yarn add csv-parse
+yarn add swagger-ui-express
+yarn add @types/swagger-ui-express -D
+
+
+
 
 Routes => Recebe a requisição e repassa
 Controllers => Classes que recebem a requisição e retoram a resposta para quem está chamando

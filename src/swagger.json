@@ -1,0 +1,50 @@
+{
+      "openapi": "3.0.0", 
+      "info":{
+            "title": "Rental-X Documentation",
+            "description": "Rental-X é uma API responsável pela gerenciamento de alugueis de carros.",
+            "version": "1.0.0",
+            "contact": {
+                  "name": ":arkanel@gmail.com - Luiz Guilherme Bandeira",
+                  "email": "arkanael@gmail.com"
+            }
+      },
+      "paths":{
+            "/categories": {
+                  "post": {
+                    "tags": ["Category"],
+                    "summary": "Create a category",
+                    "description": "Creates a new category with a name and description.",
+                    "requestBody": {
+                        "content": {
+                            "application-json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "description": {
+                                    "type": "string"
+                                  }
+                                },
+                              "example": {
+                                "name": "category name sample",
+                                "description": "category description sample"
+                              } 
+                        }
+                      }
+                    }
+                  },
+                  "responses": {
+                    "201": {
+                      "description": "Created."
+                    },
+                    "500":{
+                      "description": "Category already exists."
+                    }
+                  }
+                }
+            }
+      }
+}

@@ -1,9 +1,18 @@
 ## 💻 Sobre o projeto
+<div align='center'>
+    <h1>🚗 RentalX</h1>
+    <p>RentalX é uma API responsável pela gerenciamento de alugueis de carros. Esse projeto foi construido durante o Bootcamp Ignite da Rocketseat.</p>
+</div>
 
-🚗 RentalX -
+---
 
-Sistema de aluguel de carro
-Projeto desenvolvido no curso **Ignite** da Rocketseat
+# Descrição
+
+RentalX é uma API que foi construida durante o Bootcamp _Ignite_ da Rocketseat com o objetivo de introduzir os principais conceitos de desenvolvimento de código e as tecnologias mais utilizadas no mercado atualmente no que se diz respeito do desenvolvimento backend com NodeJS.
+
+A ideia é desenvolver uma aplicação que permita o gerenciamento de alugueis de carros, permitindo aos usuários à cadastrar veiculos novos no sistema, informações sobre clientes, permitir o aluguel do carros, receber o carro devolvido, dentro outros.
+
+O desenvolvimento da aplicação se sustenta com base nos princípios da arquitetura limpa e do SOLID. Isso foi algo bastante abordados duantes às aulas é possivel ver sua presença na construção de casos de uso, entidades, e a aplicação do padrão de repositório.
 
 ---
 
@@ -25,25 +34,35 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## ⚙️ Funcionalidades
 
 - [x] Cadastrar Categorias de veiculos:
+- [x] Importar arquivo `csv` para cadastrar de categorias de veiculos:
 - [x] Listar Categorias de veiculos:
 
 - [x] Cadastrar especificação de veiculos:
 
-- [x] Cadastrar especificação de veiculos:
 
 
 
 ## 🚀 Como executar o projeto
-
+Em desenvolvimento
 ---
 
 ### 🌉 Rotas utiizadas :
 
 #### Base: `http://localhost:3333`
 
-- Create `/categories` TIPO: POST
-- Create `/specifications` TIPO: POST
-- FindAll `/categories` TIPO: GET
+- `POST: /categories` 
+Cria uma nova categoria, recebendo o `name` e a `description` dela no corpo da requisição, desde que não seja um `name` já existente. O formato da requisição fica da seguinte forma.
+
+- `GET: /categories` 
+Retorna todas as categorias armazenadas no banco de dados se um usuário válido e com  atribuições de administrador está fazendo a solicitação.
+
+- `POST: /categories/import`
+Cria novas categorias com base em um aquivo _.csv_, com os atributos de `name` e `description`. O caminho do arquivo é passado no corpo da requisição e a as categorias são criadas desde que não seja um `name` já existente.
+
+- `POST: /specifications`
+Cria uma nova especificação, recebendo o `name` e a `description` dela no corpo da requisição, desde que não seja um `name` já existente. O formato da requisição fica da seguinte forma.
+
+
 
 ### 📚 Legendas dos verbos HTTP
 
